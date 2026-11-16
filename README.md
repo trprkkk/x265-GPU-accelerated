@@ -1,5 +1,9 @@
 # hybrid-x265-gpu
 
+**日本語 (このページ)** | **[English: README.en.md](README.en.md)**
+
+---
+
 x265 (3.4, releasetag 3.4) をベースに、**CUDA / OpenCL による動き探索 (ME) の候補生成と
 ルックアヘッド**を追加した CPU/GPU ハイブリッド HEVC エンコーダです。
 [trprkkk/x264-GPU-accelerated](https://github.com/trprkkk/x264-GPU-accelerated) の x265 版です。
@@ -258,3 +262,9 @@ x265/                                   本フォーク本体
 > x265 フォーク + CUDA/OpenCL による CPU/GPU ハイブリッド HEVC エンコーダ:
 > --gpu-me 0 と --gpu-lookahead 2 は本家 x265 とビット一致、exhaustive 探索で 5.6 倍。
 > CUDA と OpenCL は同一のビットストリームを生成 (mode 2 の PSNR は stock と完全一致)。
+
+## 9. ライセンス
+
+本フォークは upstream の x265 と同じく **GNU General Public License Version 2 (GPLv2)** です
+(全文は [`LICENSE`](LICENSE) を参照。upstream `x265/COPYING` と同一)。
+GPU 追加コード (`x265/source/common/gpu*` 等) も同じライセンスの下で配布します。
