@@ -1,0 +1,35 @@
+# Build trees
+build-*/
+build-vs/
+build-legacy/
+build-10bit/
+build-baseline*/
+build-nogpu/
+build-harness/
+build-msvc/
+build-asan/
+# Test/build artifacts
+testdata/
+verify-out/
+bench-results/
+release-assets/
+*.hevc
+*.pdb
+*.exp
+*.lib
+*.log
+*.txt
+!COPYING
+!README.md
+!tools/make_testclip.py
+# Reference clone (not part of this fork)
+x264ref_tmp/
+baseline-src/
+# Design memos (working notes)
+Fable5.2memo*.txt
+# Scratch files
+tools/patch_cuda.py
+tools/la_cuda_add.txt
+# OS / editor
+.DS_Store
+Thumbs.db
